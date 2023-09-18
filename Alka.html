@@ -1,0 +1,509 @@
+<html>
+
+<head>
+    <title>Music Player</title>
+    <link rel="stylesheet" href="Artist.css">
+    <link rel="stylesheet" href="HeadLogSide.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="Logo.png" class="logo_image" type="img/jpg">
+                <div class="logo_name">Music Player</div>
+            </div>
+            <input type="text" class="search" id="searchbar" placeholder="Search Songs" onkeyup="searchSongs()">
+
+            <button class="search_icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+            <a class="log" href="Signup.html">
+                <button class="signup_btn">Sign up</button>
+            </a>
+            <a class="log" href="Login.html">
+                <button class="login_btn">Login</button>
+            </a>
+        </header>
+
+        <sidebar class="sidebar">
+            <div>
+                <a class="list" href="ArtistMore.html">
+                    <div class="song_type">Top Artist</div>
+                </a>
+                <a class="list" href="NewSong.html">
+                    <div class="song_type">New Songs</div>
+                </a>
+                <a class="list" href="Party.html">
+                    <div class="song_type">Party</div>
+                </a>
+                <a class="list" href="Romantic.html">
+                    <div class="song_type">Romantic</div>
+                </a>
+                <a class="list" href="English.html">
+                    <div class="song_type">English</div>
+                </a>
+                <a class="list" href="Trending.html">
+                    <div class="song_type">Trending Now</div>
+                </a>
+            </div>
+        </sidebar>
+
+        <main class="main">
+            <div class="image_container">
+                <div class="image">
+                    <img class="artist" src="https://c.saavncdn.com/artists/Alka_Yagnik_002_20220314192930_250x250.jpg">
+                    <div class="name_container">
+                        <div class="name">
+                            <h4 class="artist_name">Alka Yagnik</h4>
+                            <div class="check">
+                                <i class="fa-solid fa-circle-check" style="color: rgb(55, 0, 255);"></i>
+                            </div>
+                        </div>
+                        <div class="artist_title">
+                            Artist · 12,746,139 Listeners
+                        </div>
+                    </div>
+                </div>
+                <div class="list_container">
+                    <div class="song_list">
+                        <div class="srno"> 1 </div>
+                        <div class="items" id="1">
+                            <div class="song_image">
+                                <img src="https://c.saavncdn.com/994/Tamasha-Hindi-2015-50x50.jpg">
+                            </div>
+                            <h4 class="song_name"> Agar Tum Sath Ho </h4>
+                            <p class="artists"> Alka Yagnik, Arijit Singh </p>
+                            <p class="movie_name"> Tamasha </p>
+                            <p class="duration"> 3:11 </p>
+                        </div>
+                    </div>
+                    <div class="song_list">
+                        <div class="srno"> 2 </div>
+                        <div class="items" id="2">
+                            <div class="song_image">
+                                <img src="https://c.saavncdn.com/blob/461/Saajan-Hindi-1991-20220616044407-50x50.jpg">
+                            </div>
+                            <h4 class="song_name"> Mera Dil Bhi Kitna </h4>
+                            <p class="artists"> Kumar Sanu, Alka Yagnik </p>
+                            <p class="movie_name"> Saajan </p>
+                            <p class="duration"> 5:22 </p>
+                        </div>
+                    </div>
+                    <div class="song_list">
+                        <div class="srno"> 3 </div>
+                        <div class="items" id="3">
+                            <div class="song_image">
+                                <img src="https://c.saavncdn.com/454/Dhadkan-Hindi-2000-20210226131403-50x50.jpg">
+                            </div>
+                            <h4 class="song_name"> Dil Ne Yeh Kaha Hain Dil Se </h4>
+                            <p class="artists"> Udit Narayan, Alka Yagnik </p>
+                            <p class="movie_name"> Dhadkan </p>
+                            <p class="duration"> 5:43 </p>
+                        </div>
+                    </div>
+                    <div class="song_list">
+                        <div class="srno"> 4 </div>
+                        <div class="items" id="4">
+                            <div class="song_image">
+                                <img
+                                    src="https://c.saavncdn.com/024/Kyaa-Dil-Ne-Kahaa-Hindi-2002-20190618093918-50x50.jpg">
+                            </div>
+                            <h4 class="song_name"> Kyaa Dil Ne Kahaa </h4>
+                            <p class="artists"> Himesh Reshammiya, Udit Narayan, Alka Yagnik </p>
+                            <p class="movie_name"> Kyaa Dil Ne Kahaa </p>
+                            <p class="duration"> 6:01 </p>
+                        </div>
+                    </div>
+                    <div class="song_list">
+                        <div class="srno"> 5 </div>
+                        <div class="items" id="5">
+                            <div class="song_image">
+                                <img
+                                    src="https://c.saavncdn.com/819/Humko-Tumse-Pyar-Hai-Hindi-2005-20221128124535-50x50.jpg">
+                            </div>
+                            <h4 class="song_name"> Humko Tumse Pyaar Hai </h4>
+                            <p class="artists"> Kumar Sanu, Alka Yagnik, Anand Raj Anand </p>
+                            <p class="movie_name"> Humko Tumse Pyaar Hai </p>
+                            <p class="duration"> 2:51 </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="play_container">
+            <div class="wave">
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+            </div>
+            <div class="poster">
+                <img src="https://c.saavncdn.com/994/Tamasha-Hindi-2015-50x50.jpg" id="song_poster" type="img/jpg">
+            </div>
+            <div class="title_container">
+                <div class="song_title"> Agar Tum Sath Ho </div>
+                <div class="subtitle"> Alka Yagnik, Arijit Singh </div>
+            </div>
+            <div class="icon_container">
+                <div><i class="fa-solid fa-backward-step" id="back" style="color: white"></i></div>
+                <div onclick="playPause()"><i class="fa-solid fa-play" style="color: white" id="play"></i></div>
+                <div><i class="fa-solid fa-forward-step" id="next" style="color: white"></i></div>
+            </div>
+            <audio id="ctrlsong">
+                <source src="Songs/Agar Tum Sath Ho.mp3" type="audio/mp3">
+            </audio>
+            <input type="range" id="progress" value="0">
+            <div class="time_container">
+                <span class="current_time"> 00:00 </span>
+                <span class="slash"> / </span>
+                <span class="song_duration"> 00:00 </span>
+            </div>
+            <div class="volume">
+                <i class="fa-solid fa-volume-high" id="vol_icon" style="color: white"></i>
+                <input type="range" id="vol_progress" min="0" max="100">
+            </div>
+        </div>
+
+</body>
+
+</html>
+
+
+<script>
+
+    // Search Engine
+
+    const searchSongs = () => {
+        let top = document.getElementById("searchbar").value.toUpperCase();
+        let searchname = document.querySelectorAll(".name");
+
+        for (var i = 0; i < searchname.length; i++) {
+            let a = searchname[i].getElementsByTagName("h4")[0];
+            let textValue = a.innerHTML;
+
+            if (textValue.toUpperCase().indexOf(top) > -1) {
+                searchname[i].style.color = "white";
+
+                if (top == "") {
+                    searchname[i].style.color = "black";
+                }
+            }
+            else {
+                searchname[i].style.color = "black";
+            }
+        }
+    }
+
+
+    // Music Play
+
+    const wave = document.querySelector(".wave");
+    const progress = document.getElementById("progress");
+    const song = document.getElementById("ctrlsong");
+    const playbtn = document.getElementById("play");
+    const back_button = document.getElementById("back");
+    const forward_button = document.getElementById("next");
+    const current_time = document.querySelector(".current_time");
+    const song_duration = document.querySelector(".song_duration");
+    const play_container = document.querySelector(".play_container");
+    let poster = document.getElementById("song_poster");
+    let song_title = document.querySelector(".song_title");
+    let subtitle = document.querySelector(".subtitle");
+
+
+    current_time.innerHTML = song.currentTime;
+    song_duration.innerHTML = song.duration;
+
+    // code on line 117 if(song.play())
+
+
+
+    function playPause() {
+        if (song.paused) {
+            setInterval(() => {
+                progress.value = song.currentTime;
+                current_time.innerHTML = formatTime(song.currentTime);
+            }, 1000);
+        }
+
+        if (playbtn.classList.contains("fa-pause")) {
+            song.pause();
+            wave.classList.remove("active");
+            playbtn.classList.remove("fa-pause");
+            playbtn.classList.add("fa-play");
+        }
+        else {
+            song.play();
+            wave.classList.add("active");
+            playbtn.classList.add("fa-pause");
+            playbtn.classList.remove("fa-play");
+        }
+    }
+
+    progress.onchange = function () {
+        song.play();
+        song.currentTime = progress.value;
+        playbtn.classList.add("fa-pause");
+        playbtn.classList.remove("fa-play");
+    }
+
+    current_time.innerHTML = "00:00";
+    setTimeout(() => {
+        progress.max = song.duration;
+        song_duration.innerHTML = formatTime(song.duration);
+    }, 300);
+
+    const formatTime = (time) => {
+        let min = Math.floor(time / 60);
+        if (min < 10) {
+            min = `${min}`;
+        }
+        let sec = Math.floor(time % 60);
+        if (sec < 10) {
+            sec = `0${sec}`;
+        }
+        return `${min}:${sec}`;
+    }
+
+
+    const list = [
+        {
+            id: 1,
+            photo: "https://c.saavncdn.com/994/Tamasha-Hindi-2015-50x50.jpg",
+            audio: "Songs/Agar Tum Sath Ho.mp3",
+            title_name: "Agar Tum Sath Ho",
+            singer: "Alka Yagnik, Arijit Singh"
+        },
+        {
+            id: 2,
+            photo: "https://c.saavncdn.com/blob/461/Saajan-Hindi-1991-20220616044407-50x50.jpg",
+            audio: "Songs/Mera Dil Bhi Kitna.mp3",
+            title_name: "Mera Dil Bhi Kitna",
+            singer: "Kumar Sanu, Alka Yagnik"
+        },
+        {
+            id: 3,
+            photo: "https://c.saavncdn.com/454/Dhadkan-Hindi-2000-20210226131403-50x50.jpg",
+            audio: "Songs/Dil Ne Yeh Kaha Hain Dil Se.mp3",
+            title_name: "Dil Ne Yeh Kaha Hain Dil Se",
+            singer: "Udit Narayan, Alka Yagnik"
+        },
+        {
+            id: 4,
+            photo: "https://c.saavncdn.com/024/Kyaa-Dil-Ne-Kahaa-Hindi-2002-20190618093918-50x50.jpg",
+            audio: "Songs/Kyaa Dil Ne Kahaa.mp3",
+            title_name: "Kyaa Dil Ne Kahaa",
+            singer: "Himesh Reshammiya, Udit Narayan, Alka Yagnik"
+        },
+        {
+            id: 5,
+            photo: "https://c.saavncdn.com/819/Humko-Tumse-Pyar-Hai-Hindi-2005-20221128124535-50x50.jpg",
+            audio: "Songs/Humko Tumse Pyaar Hai.mp3",
+            title_name: "Humko Tumse Pyaar Hai",
+            singer: "Kumar Sanu, Alka Yagnik, Anand Raj Anand"
+        }
+    ]
+
+
+    let index = 0;
+
+    Array.from(document.getElementsByClassName("song_list")).forEach((e) => {
+        e.addEventListener("click", (el) => {
+            index = el.target.id;
+
+            song_title.innerHTML = list[index - 1].title_name;
+            subtitle.innerHTML = list[index - 1].singer;
+            poster.src = list[index - 1].photo;
+            song.src = list[index - 1].audio;
+
+            let musicTitle = list.filter((elm) => {
+                return elm.id == index;
+            })
+
+            musicTitle.forEach(element => {
+                let { title_name } = element;
+                song_title.innerHTML = title_name;
+            })
+
+            song.play();
+            wave.classList.add("active");
+            playbtn.classList.add("fa-pause");
+            playbtn.classList.remove("fa-play");
+
+            song.onloadedmetadata = function () {
+                progress.max = song.duration;
+                progress.value = song.currentTime;
+            }
+
+            if (song.play()) {
+                play_container.style.transform = "translateY(0px)";
+                setInterval(() => {
+                    progress.value = song.currentTime;
+                    current_time.innerHTML = formatTime(song.currentTime);
+                }, 1000);
+            }
+
+            current_time.innerHTML = "00:00";
+            setTimeout(() => {
+                progress.max = song.duration;
+                song_duration.innerHTML = formatTime(song.duration);
+            }, 300);
+
+            const formatTime = (time) => {
+                let min = Math.floor(time / 60);
+                if (min < 10) {
+                    min = `${min}`;
+                }
+                let sec = Math.floor(time % 60);
+                if (sec < 10) {
+                    sec = `0${sec}`;
+                }
+                return `${min}:${sec}`;
+            }
+        })
+    });
+
+
+
+    back.addEventListener("click", () => {
+        index -= 1;
+
+        song_title.innerHTML = list[index - 1].title_name;
+        subtitle.innerHTML = list[index - 1].singer;
+        poster.src = list[index - 1].photo;
+        song.src = list[index - 1].audio;
+
+        let musicTitle = list.filter((elm) => {
+            return elm.id == index;
+        })
+
+        musicTitle.forEach(element => {
+            let { title_name } = element;
+            song_title.innerHTML = title_name;
+        })
+
+        song.play();
+        wave.classList.add("active");
+        playbtn.classList.add("fa-pause");
+        playbtn.classList.remove("fa-play");
+
+        song.onloadedmetadata = function () {
+            progress.max = song.duration;
+            progress.value = song.currentTime;
+        }
+
+        if (song.play()) {
+            setInterval(() => {
+                progress.value = song.currentTime;
+                current_time.innerHTML = formatTime(song.currentTime);
+            }, 1000);
+        }
+
+        current_time.innerHTML = "00:00";
+        setTimeout(() => {
+            progress.max = song.duration;
+            song_duration.innerHTML = formatTime(song.duration);
+        }, 300);
+
+        const formatTime = (time) => {
+            let min = Math.floor(time / 60);
+            if (min < 10) {
+                min = `${min}`;
+            }
+            let sec = Math.floor(time % 60);
+            if (sec < 10) {
+                sec = `0${sec}`;
+            }
+            return `${min}:${sec}`;
+        }
+    });
+
+
+    next.addEventListener("click", () => {
+        index++;
+
+        song_title.innerHTML = list[index - 1].title_name;
+        subtitle.innerHTML = list[index - 1].singer;
+        poster.src = list[index - 1].photo;
+        song.src = list[index - 1].audio;
+
+        let musicTitle = list.filter((elm) => {
+            return elm.id == index;
+        })
+
+        musicTitle.forEach(element => {
+            let { title_name } = element;
+            song_title.innerHTML = title_name;
+        })
+
+        song.play();
+        wave.classList.add("active");
+        playbtn.classList.add("fa-pause");
+        playbtn.classList.remove("fa-play");
+
+        song.onloadedmetadata = function () {
+            progress.max = song.duration;
+            progress.value = song.currentTime;
+        }
+
+        if (song.play()) {
+            setInterval(() => {
+                progress.value = song.currentTime;
+                current_time.innerHTML = formatTime(song.currentTime);
+            }, 1000);
+        }
+
+        current_time.innerHTML = "00:00";
+        setTimeout(() => {
+            progress.max = song.duration;
+            song_duration.innerHTML = formatTime(song.duration);
+        }, 300);
+
+        const formatTime = (time) => {
+            let min = Math.floor(time / 60);
+            if (min < 10) {
+                min = `${min}`;
+            }
+            let sec = Math.floor(time % 60);
+            if (sec < 10) {
+                sec = `0${sec}`;
+            }
+            return `${min}:${sec}`;
+        }
+    });
+
+
+    // Volume
+
+    let vol_icon = document.getElementById("vol_icon");
+    let vol_progress = document.getElementById("vol_progress");
+
+    vol_progress.addEventListener("change", () => {
+        if (vol_progress.value == 0) {
+            vol_icon.classList.remove("fa-volume-high");
+            vol_icon.classList.remove("fa-volume-low");
+            vol_icon.classList.add("fa-volume-xmark");
+        }
+        if (vol_progress.value > 0) {
+            vol_icon.classList.remove("fa-volume-high");
+            vol_icon.classList.remove("fa-volume-xmark");
+            vol_icon.classList.add("fa-volume-low");
+        }
+        if (vol_progress.value > 50) {
+            vol_icon.classList.add("fa-volume-high");
+            vol_icon.classList.remove("fa-volume-low");
+            vol_icon.classList.remove("fa-volume-xmark");
+        }
+
+        let vol = vol_progress.value;
+        song.volume = vol / 100;
+    });
+
+
+</script>

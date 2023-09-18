@@ -1,0 +1,644 @@
+<html>
+
+<head>
+    <title>Music Player</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Songtype.css">
+    <link rel="stylesheet" href="HeadLogSide.css">
+    <link rel="shortcut icon" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css"
+        integrity="sha512-9YHSK59/rjvhtDcY/b+4rdnl0V4LPDWdkKceBl8ZLF5TB6745ml1AfluEU6dFWqwDw9lPvnauxFgpKvJqp7jiQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="Logo.png" class="logo_image" type="img/jpg">
+                <div class="logo_name">Music Player</div>
+            </div>
+            <input type="text" class="search" id="searchbar" placeholder="Search Songs" onkeyup="searchSongs()">
+
+            <button class="search_icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+            <a class="log" href="Signup.html">
+                <button class="signup_btn">Sign up</button>
+            </a>
+            <a class="log" href="Login.html">
+                <button class="login_btn">Login</button>
+            </a>
+        </header>
+
+        <sidebar class="sidebar">
+            <div>
+                <a class="list" href="ArtistMore.html">
+                    <div class="song_type">Top Artist</div>
+                </a>
+                <a class="list" href="NewSong.html">
+                    <div class="song_type">New Songs</div>
+                </a>
+                <a class="list" href="Party.html">
+                    <div class="song_type">Party</div>
+                </a>
+                <a class="list" href="Romantic.html">
+                    <div class="song_type">Romantic</div>
+                </a>
+                <a class="list" href="English.html">
+                    <div class="song_type">English</div>
+                </a>
+                <a class="list" href="Trending.html">
+                    <div class="song_type">Trending Now</div>
+                </a>
+            </div>
+        </sidebar>
+
+        <main class="main">
+            <div class="heading">
+                <h2 class="main_heading">New Songs</h2>
+            </div>
+
+            <div class="image_container">
+                <div class="image_outer">
+                    <div class="image">
+                        <a class="thumbnail">
+                            <img class="photo" id="1"
+                                src="https://c.saavncdn.com/222/Bhediya-Hindi-2022-20230616085155-150x150.jpg">
+                        </a>
+                        <div class="name">
+                            <h4 class="title_name">Apna Bana Le</h4>
+                            <div class="singer">Arijit Singh, Sachin-Jigar</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="image_outer">
+                    <div class="image">
+                        <a class="thumbnail">
+                            <img class="photo" id="2"
+                                src="https://c.saavncdn.com/086/Khuda-Haafiz-Hindi-2020-20230620104621-150x150.jpg">
+                        </a>
+                        <div class="name">
+                            <h4 class="title_name">Jaan Ban Gaye</h4>
+                            <div class="singer">Vishal Mishra, Asees Kaur, Mithoon</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="image_outer">
+                    <div class="image">
+                        <a class="thumbnail">
+                            <img class="photo" id="3"
+                                src="https://c.saavncdn.com/006/Bhoot-Part-One-The-Haunted-Ship-Hindi-2020-20200212161346-150x150.jpg">
+                        </a>
+                        <div class="name">
+                            <h4 class="title_name">Channa Ve</h4>
+                            <div class="singer">Akhil Sachdeva, Mansheel Gujral</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="image_outer">
+                    <div class="image">
+                        <a class="thumbnail">
+                            <img class="photo" id="4"
+                                src="https://c.saavncdn.com/348/Kisi-Ka-Bhai-Kisi-Ki-Jaan-Hindi-2023-20230427184704-150x150.jpg">
+                        </a>
+                        <div class="name">
+                            <h4 class="title_name">Naiyo Lagda</h4>
+                            <div class="singer">Himesh Reshammiya, Kammal Khan</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="image_outer">
+                    <div class="image">
+                        <a class="thumbnail">
+                            <img class="photo" id="5"
+                                src="https://c.saavncdn.com/238/Shershaah-Original-Motion-Picture-Soundtrack--Hindi-2021-20210815181610-150x150.jpg">
+                        </a>
+                        <div class="name">
+                            <h4 class="title_name">Raataan Lambiyan</h4>
+                            <div class="singer">Jubin Nautiyal, Asees Kaur, Tanishk Bagchi</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="image_outer">
+                    <div class="image">
+                        <a class="thumbnail">
+                            <img class="photo" id="6"
+                                src="https://img.wynk.in/unsafe/150x150/filters:no_upscale():strip_exif():format(webp)/http://s3.ap-south-1.amazonaws.com/wynk-music-cms/srch_hungama/8902894361903_20230317115748/8902894361903/1679205263918/resources/8902894361903.jpg">
+                        </a>
+                        <div class="name">
+                            <h4 class="title_name">O Bedardeya</h4>
+                            <div class="singer">Arijit Singh</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="image_container">
+                <div class="image_outer">
+                    <div class="image">
+                        <a class="thumbnail">
+                            <img class="photo" id="7"
+                                src="https://c.saavncdn.com/807/Pathaan-Hindi-2022-20221222104158-150x150.jpg">
+                        </a>
+                        <div class="name">
+                            <h4 class="title_name">Jhoome Jo Pathaan</h4>
+                            <div class="singer">Arijit Singh, Vishal Dadlani, Vishal & Shekhar</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="image_outer">
+                    <div class="image">
+                        <a class="thumbnail">
+                            <img class="photo" id="8"
+                                src="https://c.saavncdn.com/351/Tiger-Zinda-Hai-Hindi-2017-20171212-150x150.jpg">
+                        </a>
+                        <div class="name">
+                            <h4 class="title_name">Dil Diya Gallan</h4>
+                            <div class="singer">Vishal & Shekhar, Atif Aslam</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="image_outer">
+                    <div class="image">
+                        <a class="thumbnail">
+                            <img class="photo" id="9"
+                                src="https://c.saavncdn.com/303/Malang-Sajna-Hindi-2022-20230403132803-150x150.jpg">
+                        </a>
+                        <div class="name">
+                            <h4 class="title_name">Malang Sajna</h4>
+                            <div class="singer">Sachet Tandon, Parampara Tandon</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="image_outer">
+                    <div class="image">
+                        <a class="thumbnail">
+                            <img class="photo" id="10"
+                                src="https://c.saavncdn.com/742/Tere-Vaaste-Hindi-2021-20210901153124-150x150.jpg">
+                        </a>
+                        <div class="name">
+                            <h4 class="title_name">Tere Vaaste</h4>
+                            <div class="singer">Sachin-Jigar</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="image_outer">
+                    <div class="image">
+                        <a class="thumbnail">
+                            <img class="photo" id="11"
+                                src="https://c.saavncdn.com/298/Tumhe-Kitna-Pyaar-Karte-From-Bawaal-Hindi-2023-20230707032926-150x150.jpg">
+                        </a>
+                        <div class="name">
+                            <h4 class="title_name">Tumhe Kitna Pyaar Karte</h4>
+                            <div class="singer">Mithoon, Arijit Singh</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="image_outer">
+                    <div class="image">
+                        <a class="thumbnail">
+                            <img class="photo" id="12"
+                                src="https://c.saavncdn.com/467/Phir-Aur-Kya-Chayiye-Unknown-2023-20230703101240-150x150.jpg">
+                        </a>
+                        <div class="name">
+                            <h4 class="title_name">Phir Aur Kya Chahiye</h4>
+                            <div class="singer">Sachin-Jigar, Arijit Singh</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+    <div class="play_container">
+        <div class="wave">
+            <div class="wave1"></div>
+            <div class="wave1"></div>
+            <div class="wave1"></div>
+        </div>
+        <div class="poster">
+            <img src="https://c.saavncdn.com/222/Bhediya-Hindi-2022-20230616085155-50x50.jpg" id="song_poster"
+                type="img/jpg">
+        </div>
+        <div class="title_container">
+            <div class="song_title"> Apna Bana Le </div>
+            <div class="subtitle"> Arijit Singh, Sachin-Jigar </div>
+        </div>
+        <div class="icon_container">
+            <div><i class="fa-solid fa-backward-step" id="back" style="color: white"></i></div>
+            <div onclick="playPause()"><i class="fa-solid fa-play" style="color: white" id="play"></i></div>
+            <div><i class="fa-solid fa-forward-step" id="next" style="color: white"></i></div>
+        </div>
+        <audio id="ctrlsong">
+            <source src="Songs/Apna Bana Le.mp3" type="audio/mp3">
+        </audio>
+        <input type="range" id="progress" value="0">
+        <div class="time_container">
+            <span class="current_time"> 00:00 </span>
+            <span class="slash"> / </span>
+            <span class="song_duration"> 00:00 </span>
+        </div>
+        <div class="volume">
+            <i class="fa-solid fa-volume-high" id="vol_icon" style="color: white"></i>
+            <input type="range" id="vol_progress" min="0" max="100">
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+<script>
+
+    // Search
+
+    const searchSongs = () => {
+        let top = document.getElementById("searchbar").value.toUpperCase();
+        let searchname = document.querySelectorAll(".name");
+
+        for (var i = 0; i < searchname.length; i++) {
+            let a = searchname[i].getElementsByTagName("h4")[0];
+            let textValue = a.innerHTML;
+
+            if (textValue.toUpperCase().indexOf(top) > -1) {
+                searchname[i].style.color = "white";
+
+                if (top == "") {
+                    searchname[i].style.color = "black";
+                }
+            }
+            else {
+                searchname[i].style.color = "black";
+            }
+        }
+    }
+
+
+    // Music Play
+
+    const wave = document.querySelector(".wave");
+    const progress = document.getElementById("progress");
+    const song = document.getElementById("ctrlsong");
+    const playbtn = document.getElementById("play");
+    const back_button = document.getElementById("back");
+    const forward_button = document.getElementById("next");
+    const current_time = document.querySelector(".current_time");
+    const song_duration = document.querySelector(".song_duration");
+    const play_container = document.querySelector(".play_container");
+    let poster = document.getElementById("song_poster");
+    let song_title = document.querySelector(".song_title");
+    let subtitle = document.querySelector(".subtitle");
+
+
+    current_time.innerHTML = song.currentTime;
+    song_duration.innerHTML = song.duration;
+
+    function playPause() {
+        if (playbtn.classList.contains("fa-pause")) {
+            song.pause();
+            wave.classList.remove("active");
+            playbtn.classList.remove("fa-pause");
+            playbtn.classList.add("fa-play");
+        }
+        else {
+            song.play();
+            wave.classList.add("active");
+            playbtn.classList.add("fa-pause");
+            playbtn.classList.remove("fa-play");
+        }
+    }
+
+    progress.onchange = function () {
+        if (song.play()) {
+            setInterval(() => {
+                progress.value = song.currentTime;
+                current_time.innerHTML = formatTime(song.currentTime);
+            }, 1000);
+        }
+
+        song.play();
+        song.currentTime = progress.value;
+        playbtn.classList.add("fa-pause");
+        playbtn.classList.remove("fa-play");
+    }
+
+    current_time.innerHTML = "00:00";
+    setTimeout(() => {
+        progress.max = song.duration;
+        song_duration.innerHTML = formatTime(song.duration);
+    }, 300);
+
+    const formatTime = (time) => {
+        let min = Math.floor(time / 60);
+        if (min < 10) {
+            min = `${min}`;
+        }
+        let sec = Math.floor(time % 60);
+        if (sec < 10) {
+            sec = `0${sec}`;
+        }
+        return `${min}:${sec}`;
+    }
+
+
+    const list = [
+        {
+            id: 1,
+            photo: "https://c.saavncdn.com/222/Bhediya-Hindi-2022-20230616085155-50x50.jpg",
+            audio: "Songs/Apna Bana Le.mp3",
+            title_name: "Apna Bana Le",
+            singer: "Arijit Singh, Sachin-Jigar"
+        },
+        {
+            id: 2,
+            photo: "https://c.saavncdn.com/086/Khuda-Haafiz-Hindi-2020-20230620104621-50x50.jpg",
+            audio: "Songs/Jaan Ban Gaye.mp3",
+            title_name: "Jaan Ban Gaye",
+            singer: "Vishal Mishra, Asees Kaur, Mithoon"
+        },
+        {
+            id: 3,
+            photo: "https://c.saavncdn.com/006/Bhoot-Part-One-The-Haunted-Ship-Hindi-2020-20200212161346-50x50.jpg",
+            audio: "Songs/Channa Ve.mp3",
+            title_name: "Channa Ve",
+            singer: "Akhil Sachdeva, Mansheel Gujral"
+        },
+        {
+            id: 4,
+            photo: "https://c.saavncdn.com/348/Kisi-Ka-Bhai-Kisi-Ki-Jaan-Hindi-2023-20230427184704-50x50.jpg",
+            audio: "Songs/Naiyo Lagda.mp3",
+            title_name: "Naiyo Lagda",
+            singer: "Kamaal Khan, Himesh Reshammiya"
+        },
+        {
+            id: 5,
+            photo: "https://c.saavncdn.com/238/Shershaah-Original-Motion-Picture-Soundtrack--Hindi-2021-20210815181610-50x50.jpg",
+            audio: "Songs/Raataan Lambiyan.mp3",
+            title_name: "Raataan Lambiyan",
+            singer: "Jubin Nautiyal, Asees Kaur, Tanishk Bagchi"
+        },
+        {
+            id: 6,
+            photo: "https://img.wynk.in/unsafe/50x50/filters:no_upscale():strip_exif():format(webp)/http://s3.ap-south-1.amazonaws.com/wynk-music-cms/srch_hungama/8902894361903_20230317115748/8902894361903/1679205263918/resources/8902894361903.jpg",
+            audio: "Songs/O Bedardeya.mp3",
+            title_name: "O Bedardeya",
+            singer: "Arijit Singh"
+        },
+        {
+            id: 7,
+            photo: "https://c.saavncdn.com/807/Pathaan-Hindi-2022-20221222104158-50x50.jpg",
+            audio: "Songs/Jhoome Jo Pathaan.mp3",
+            title_name: "Jhoome Jo Pathaan",
+            singer: "Arijit Singh, Vishal Dadlani, Vishal & Shekhar"
+        },
+        {
+            id: 8,
+            photo: "https://c.saavncdn.com/351/Tiger-Zinda-Hai-Hindi-2017-20171212-50x50.jpg",
+            audio: "Songs/Dil Diya Gallan.mp3",
+            title_name: "Dil Diya Gallan",
+            singer: "Vishal & Shekhar, Atif Aslam"
+        },
+        {
+            id: 9,
+            photo: "https://c.saavncdn.com/303/Malang-Sajna-Hindi-2022-20230403132803-50x50.jpg",
+            audio: "Songs/Malang Sajna.mp3",
+            title_name: "Malang Sajna",
+            singer: "Sachet Tandon, Parampara Tandon"
+        },
+        {
+            id: 10,
+            photo: "https://c.saavncdn.com/742/Tere-Vaaste-Hindi-2021-20210901153124-50x50.jpg",
+            audio: "Songs/Tere Vaaste.mp3",
+            title_name: "Tere Vaaste",
+            singer: "Sachin-Jigar"
+        },
+        {
+            id: 11,
+            photo: "https://c.saavncdn.com/298/Tumhe-Kitna-Pyaar-Karte-From-Bawaal-Hindi-2023-20230707032926-50x50.jpg",
+            audio: "Songs/Tumhe Kitna Pyaar Karte.mp3",
+            title_name: "Tumhe Kitna Pyaar Karte",
+            singer: "Mithoon, Arijit Singh"
+        },
+        {
+            id: 12,
+            photo: "https://c.saavncdn.com/467/Phir-Aur-Kya-Chayiye-Unknown-2023-20230703101240-50x50.jpg",
+            audio: "Songs/Phir Aur Kya Chahiye.mp3",
+            title_name: "Phir Aur Kya Chahiye",
+            singer: "Sachin-Jigar, Arijit Singh"
+        }
+    ]
+
+
+    let index = 0;
+
+    Array.from(document.getElementsByClassName("photo")).forEach((e) => {
+        e.addEventListener("click", (el) => {
+            index = el.target.id;
+
+            song_title.innerHTML = list[index - 1].title_name;
+            subtitle.innerHTML = list[index - 1].singer;
+            poster.src = list[index - 1].photo;
+            song.src = list[index - 1].audio;
+
+            let musicTitle = list.filter((elm) => {
+                return elm.id == index;
+            })
+
+            musicTitle.forEach(element => {
+                let { title_name } = element;
+                song_title.innerHTML = title_name;
+            })
+
+            song.play();
+            wave.classList.add("active");
+            playbtn.classList.add("fa-pause");
+            playbtn.classList.remove("fa-play");
+
+            song.onloadedmetadata = function () {
+                progress.max = song.duration;
+                progress.value = song.currentTime;
+            }
+
+            if (song.play()) {
+                play_container.style.transform = "translateY(0px)";
+                setInterval(() => {
+                    progress.value = song.currentTime;
+                    current_time.innerHTML = formatTime(song.currentTime);
+                }, 1000);
+            }
+
+            current_time.innerHTML = "00:00";
+            setTimeout(() => {
+                progress.max = song.duration;
+                song_duration.innerHTML = formatTime(song.duration);
+            }, 300);
+
+            const formatTime = (time) => {
+                let min = Math.floor(time / 60);
+                if (min < 10) {
+                    min = `${min}`;
+                }
+                let sec = Math.floor(time % 60);
+                if (sec < 10) {
+                    sec = `0${sec}`;
+                }
+                return `${min}:${sec}`;
+            }
+        })
+    });
+
+
+
+    back.addEventListener("click", () => {
+        index -= 1;
+
+        song_title.innerHTML = list[index - 1].title_name;
+        subtitle.innerHTML = list[index - 1].singer;
+        poster.src = list[index - 1].photo;
+        song.src = list[index - 1].audio;
+
+        let musicTitle = list.filter((elm) => {
+            return elm.id == index;
+        })
+
+        musicTitle.forEach(element => {
+            let { title_name } = element;
+            song_title.innerHTML = title_name;
+        })
+
+        song.play();
+        wave.classList.add("active");
+        playbtn.classList.add("fa-pause");
+        playbtn.classList.remove("fa-play");
+
+        song.onloadedmetadata = function () {
+            progress.max = song.duration;
+            progress.value = song.currentTime;
+        }
+
+        if (song.play()) {
+            setInterval(() => {
+                progress.value = song.currentTime;
+                current_time.innerHTML = formatTime(song.currentTime);
+            }, 1000);
+        }
+
+        current_time.innerHTML = "00:00";
+        setTimeout(() => {
+            progress.max = song.duration;
+            song_duration.innerHTML = formatTime(song.duration);
+        }, 300);
+
+        const formatTime = (time) => {
+            let min = Math.floor(time / 60);
+            if (min < 10) {
+                min = `${min}`;
+            }
+            let sec = Math.floor(time % 60);
+            if (sec < 10) {
+                sec = `0${sec}`;
+            }
+            return `${min}:${sec}`;
+        }
+    });
+
+
+    next.addEventListener("click", () => {
+        index++;
+
+        song_title.innerHTML = list[index - 1].title_name;
+        subtitle.innerHTML = list[index - 1].singer;
+        poster.src = list[index - 1].photo;
+        song.src = list[index - 1].audio;
+
+        let musicTitle = list.filter((elm) => {
+            return elm.id == index;
+        })
+
+        musicTitle.forEach(element => {
+            let { title_name } = element;
+            song_title.innerHTML = title_name;
+        })
+
+        song.play();
+        wave.classList.add("active");
+        playbtn.classList.add("fa-pause");
+        playbtn.classList.remove("fa-play");
+
+        song.onloadedmetadata = function () {
+            progress.max = song.duration;
+            progress.value = song.currentTime;
+        }
+
+        if (song.play()) {
+            setInterval(() => {
+                progress.value = song.currentTime;
+                current_time.innerHTML = formatTime(song.currentTime);
+            }, 1000);
+        }
+
+        current_time.innerHTML = "00:00";
+        setTimeout(() => {
+            progress.max = song.duration;
+            song_duration.innerHTML = formatTime(song.duration);
+        }, 300);
+
+        const formatTime = (time) => {
+            let min = Math.floor(time / 60);
+            if (min < 10) {
+                min = `${min}`;
+            }
+            let sec = Math.floor(time % 60);
+            if (sec < 10) {
+                sec = `0${sec}`;
+            }
+            return `${min}:${sec}`;
+        }
+    });
+
+
+    // Volume
+
+    let vol_icon = document.getElementById("vol_icon");
+    let vol_progress = document.getElementById("vol_progress");
+
+    vol_progress.addEventListener("change", () => {
+        if (vol_progress.value == 0) {
+            vol_icon.classList.remove("fa-volume-high");
+            vol_icon.classList.remove("fa-volume-low");
+            vol_icon.classList.add("fa-volume-xmark");
+        }
+        if (vol_progress.value > 0) {
+            vol_icon.classList.remove("fa-volume-high");
+            vol_icon.classList.remove("fa-volume-xmark");
+            vol_icon.classList.add("fa-volume-low");
+        }
+        if (vol_progress.value > 50) {
+            vol_icon.classList.add("fa-volume-high");
+            vol_icon.classList.remove("fa-volume-low");
+            vol_icon.classList.remove("fa-volume-xmark");
+        }
+
+        let vol = vol_progress.value;
+        song.volume = vol / 100;
+    });
+
+
+
+
+</script>

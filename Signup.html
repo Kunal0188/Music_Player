@@ -1,0 +1,131 @@
+<html>
+
+<head>
+    <title>Signup</title>
+    <link rel="stylesheet" href="Signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <div class="inner_container"
+        style="background-image: url(https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77701276282.jpg);">
+        
+        <div class="login_container">
+            <a href="Index.html">
+                <button class="close_btn">
+                    <i class="fa-solid fa-x"></i>
+                </button>
+            </a>
+
+
+            <div class="form-box signup_box">
+                <h2>Sign up</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon">
+                            <i class="fa-solid fa-user"></i>
+                        </span>
+                        <input type="text" required>
+                        <label>Username</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon">
+                            <i class="fa-solid fa-lock"></i>
+                        </span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon">
+                            <i class="fa-solid fa-lock"></i>
+                        </span>
+                        <input type="password" required>
+                        <label>Confirm Password</label>
+                    </div>
+                    <button class="submit">Sign up</button>
+                    <div class="have_account">
+                        <p>
+                            Already have an account?
+                            <a class="login-link" href="#">Login</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+
+
+            <div class="form-box login_box">
+                <h2>Login</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon">
+                            <i class="fa-solid fa-lock"></i>
+                        </span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <button class="submit">Login</button>
+                    <div class="forgot">
+                        <a href="#"> Forgot Password? </a>
+                    </div>
+
+                    <div class="no_account">
+                        <p>
+                            Don't have an account?
+                            <a class="signup-link" href="#">Sign up</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+<script>
+    const login_box = document.querySelector(".login_container");
+    const loginlink = document.querySelector(".login-link");
+    const signuplink = document.querySelector(".signup-link");
+    const signupbutton = document.querySelector(".signup");
+    const closebutton = document.querySelector(".close_btn");
+    const closebutton1 = document.querySelector(".close_btn");
+
+    signuplink.addEventListener("click", () => {
+        login_box.classList.remove("active");
+    });
+
+    loginlink.addEventListener("click", () => {
+        login_box.classList.add("active");
+    });
+
+    signupbutton.addEventListener("click", () => {
+        login_box.classList.add("active");
+    });
+
+    closebutton.addEventListener("click", () => {
+        login_box.classList.remove("active");
+    });
+
+    closebutton1.addEventListener("click", () => {
+        login_box.classList.remove("login_active");
+    });
+</script>
